@@ -1,14 +1,6 @@
-<% provide(:title, "Home")%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <%= yield(:title)%> | Ruby on Rails Tutorial</title>
-</head>
-<body>
-    <h1> Home </h1>
-    <p> This is home page of Tweet app</p>
-</body>
-</html>
+<div class="text-center jumbotron">
+	<% provide(:title, "Home")%>
+	<h1> Home </h1><hr 1px>
+	<p> This is home page of Tweet app</p>
+	<%= link_to "Sign up now!", signup_path, class:"btn btn-primary"%>
+</div>
